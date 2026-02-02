@@ -1,4 +1,4 @@
-#N canvas -11 313 1728 985 12;
+#N canvas 0 46 1728 985 12;
 #X obj 22 254 cyclone;
 #X obj 274 13 netreceive -u -b 3010;
 #X obj 273 46 oscparse, f 34;
