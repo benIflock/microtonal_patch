@@ -1,4 +1,4 @@
-#N canvas 203 225 1554 807 12;
+#N canvas 174 222 1554 807 12;
 #X obj 186 22 inlet freq;
 #X obj 330 40 inlet vol;
 #X obj 318 566 *~;
@@ -65,11 +65,13 @@
 #X obj 766 141 print;
 #X text 67 602 maybe push into full midi note??;
 #X obj 753 288 t b;
-#X obj 214 89 s outFreq;
+#X obj 266 316 s outFreq;
 #X obj 1162 541 r outFreq;
 #X msg 433 243 0.6 3000 \, 0 3000 2000;
 #X msg 327 204 \$1 0.5;
 #X obj 121 255 expr int(pow(2 \, $f1/120)*440);
+#X obj 1343 35 inlet rawVal;
+#X msg 1337 72, f 8;
 #X connect 0 0 12 0;
 #X connect 0 0 70 0;
 #X connect 1 0 4 0;
@@ -82,7 +84,6 @@
 #X connect 7 0 6 0;
 #X connect 8 0 9 0;
 #X connect 12 0 59 0;
-#X connect 12 0 66 0;
 #X connect 13 0 34 0;
 #X connect 14 0 15 0;
 #X connect 15 0 13 0;
@@ -138,3 +139,6 @@
 #X connect 68 0 41 0;
 #X connect 69 0 22 0;
 #X connect 70 0 61 1;
+#X connect 70 0 66 0;
+#X connect 71 0 72 0;
+#X connect 72 0 16 1;
