@@ -256,7 +256,7 @@
 #X obj 889 186 s b6;
 #X obj 933 186 s b7;
 #X obj 979 186 s b8;
-#X text 587 466 HELLO!!!! Version 1.1.3 - rework Monday 9th;
+#X text 587 466 HELLO!!!! Version 1.1.3 - rework thurs 12;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 0 7 0;
