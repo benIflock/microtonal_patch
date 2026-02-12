@@ -51,14 +51,14 @@
 #X obj 1296 569 outlet vol;
 #X obj 201 179 quantizePentatonic;
 #X obj 225 92 ftom;
-#X obj 134 338 r quant;
+#X obj 126 228 r quant;
 #X obj 139 369 cyclone/switch 2 1;
 #X obj 674 129 inlet b;
 #X obj 766 141 print;
 #X text 67 602 maybe push into full midi note??;
 #X msg 433 243 0.6 3000 \, 0 3000 2000;
 #X msg 327 204 \$1 0.5;
-#X obj 121 255 expr int(pow(2 \, $f1/120)*440);
+#X obj 192 280 expr int(pow(2 \, $f1/120)*440);
 #X obj 1343 35 inlet rawVal;
 #X msg 1337 72, f 8;
 #X floatatom 331 76 5 0 1 0 - - - 0;
@@ -67,6 +67,8 @@
 #X floatatom 159 115 5 0 0 0 - - - 0;
 #X obj 1025 76 t b;
 #X obj 1033 133 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 130 261 t f b;
+#X floatatom 204 417 5 0 0 0 - - - 0;
 #X connect 0 0 11 0;
 #X connect 1 0 62 0;
 #X connect 2 0 16 0;
@@ -113,10 +115,10 @@
 #X connect 46 0 11 0;
 #X connect 46 0 66 0;
 #X connect 47 0 62 0;
-#X connect 50 0 53 2;
 #X connect 51 0 50 0;
-#X connect 52 0 53 0;
+#X connect 52 0 68 0;
 #X connect 53 0 15 1;
+#X connect 53 0 69 0;
 #X connect 54 0 36 0;
 #X connect 54 0 55 0;
 #X connect 57 0 38 0;
@@ -128,4 +130,7 @@
 #X connect 63 0 12 0;
 #X connect 64 0 22 0;
 #X connect 65 0 59 0;
+#X connect 65 0 53 2;
 #X connect 66 0 67 0;
+#X connect 68 0 53 0;
+#X connect 68 1 65 0;
