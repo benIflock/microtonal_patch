@@ -1,4 +1,4 @@
-#N canvas 0 44 1728 985 12;
+#N canvas 0 44 1728 981 12;
 #X obj 22 254 cyclone;
 #X obj 274 13 netreceive -u -b 3010;
 #X obj 273 46 oscparse, f 34;
@@ -24,8 +24,8 @@
 #X obj 496 238 s v6;
 #X obj 540 238 s v7;
 #X obj 583 239 s v8;
-#X msg 754 67 \; pd dsp 1;
-#X obj 747 23 loadbang;
+#X msg 717 74 \; pd dsp 1;
+#X obj 715 9 loadbang;
 #X obj 660 211 route t1 t2 t3 t4 t5 t6 t7 t8, f 50;
 #X obj 660 238 s t1;
 #X obj 703 238 s t2;
@@ -41,12 +41,12 @@
 #X obj 13 476 r f1;
 #X floatatom 13 509 5 0 0 0 - - - 0;
 #X obj 49 410 r v1;
-#X floatatom 49 437 5 0 0 0 - - - 0;
+#X floatatom 49 437 5 0 1 0 - - - 0;
 #X obj 87 485 r t1;
 #X obj 85 510 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 121 429 r b1;
 #X obj 156 500 r mv;
-#X obj 121 458 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 121 458 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
 #X obj 1117 121 text define borindo_save;
 #X obj 1055 180 text get borindo_save;
 #X floatatom 156 583 5 0 0 0 - - - 0;
@@ -55,10 +55,10 @@
 #X obj 29 938 text set borindo_save;
 #X obj 83 586 s led1;
 #X floatatom 281 510 5 0 0 0 - - - 0;
-#X floatatom 317 438 5 0 0 0 - - - 0;
+#X floatatom 317 438 5 0 1 0 - - - 0;
 #X obj 353 511 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 424 501 r mv;
-#X obj 389 459 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 389 459 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
 #X floatatom 424 584 5 0 0 0 - - - 0;
 #X floatatom 496 583 5 0 0 0 - - - 0;
 #X obj 14 543 borindo, f 31;
@@ -68,7 +68,7 @@
 #X obj 355 486 r t2;
 #X obj 389 430 r b2;
 #X floatatom 539 683 5 0 0 0 - - - 0;
-#X floatatom 575 611 5 0 0 0 - - - 0;
+#X floatatom 575 611 5 0 1 0 - - - 0;
 #X obj 611 684 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 682 674 r mv;
 #X obj 647 632 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -82,7 +82,7 @@
 #X obj 613 659 r t3;
 #X obj 611 748 s led3;
 #X floatatom 791 630 5 0 0 0 - - - 0;
-#X floatatom 827 558 5 0 0 0 - - - 0;
+#X floatatom 827 558 5 0 1 0 - - - 0;
 #X obj 863 631 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 934 621 r mv;
 #X obj 899 579 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -118,7 +118,7 @@
 #X obj 932 738 s fSave4;
 #X obj 1002 737 s vSave4;
 #X floatatom 1047 421 5 0 0 0 - - - 0;
-#X floatatom 1083 349 5 0 0 0 - - - 0;
+#X floatatom 1083 349 5 0 1 0 - - - 0;
 #X obj 1119 422 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1190 412 r mv;
 #X obj 1155 370 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -133,7 +133,7 @@
 #X obj 1188 529 s fSave5;
 #X obj 1258 528 s vSave5;
 #X floatatom 1216 663 5 0 0 0 - - - 0;
-#X floatatom 1252 591 5 0 0 0 - - - 0;
+#X floatatom 1252 591 5 0 1 0 - - - 0;
 #X obj 1288 664 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1359 654 r mv;
 #X obj 1324 612 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -148,7 +148,7 @@
 #X obj 1357 771 s fSave6;
 #X obj 1427 770 s vSave6;
 #X floatatom 1404 519 5 0 0 0 - - - 0;
-#X floatatom 1440 447 5 0 0 0 - - - 0;
+#X floatatom 1440 447 5 0 1 0 - - - 0;
 #X obj 1476 520 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1547 510 r mv;
 #X obj 1512 468 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -162,7 +162,7 @@
 #X obj 1615 626 s vSave7;
 #X obj 1474 596 s led7;
 #X floatatom 1591 427 5 0 0 0 - - - 0;
-#X floatatom 1627 355 5 0 0 0 - - - 0;
+#X floatatom 1627 355 5 0 1 0 - - - 0;
 #X obj 1663 428 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1734 418 r mv;
 #X obj 1699 376 tgl 19 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 1 1;
@@ -256,7 +256,17 @@
 #X obj 889 186 s b6;
 #X obj 933 186 s b7;
 #X obj 979 186 s b8;
-#X text 587 466 HELLO!!!! Version 1.1.3 - rework thurs 12;
+#X text 587 466 HELLO!!!! Version 1.1.5 - rework 15th April;
+#X msg 828 32 list 0 0 0 0 0 0 0 0;
+#X obj 827 62 unpack f f f f f f f f;
+#X obj 824 95 s v1;
+#X obj 848 119 s v2;
+#X obj 868 97 s v3;
+#X obj 890 121 s v4;
+#X obj 913 98 s v5;
+#X obj 935 122 s v6;
+#X obj 956 99 s v7;
+#X obj 979 126 s v8;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 0 7 0;
@@ -280,6 +290,7 @@
 #X connect 16 6 23 0;
 #X connect 16 7 24 0;
 #X connect 26 0 25 0;
+#X connect 26 0 258 0;
 #X connect 27 0 28 0;
 #X connect 27 1 29 0;
 #X connect 27 2 30 0;
@@ -526,3 +537,12 @@
 #X connect 248 5 254 0;
 #X connect 248 6 255 0;
 #X connect 248 7 256 0;
+#X connect 258 0 259 0;
+#X connect 259 0 260 0;
+#X connect 259 1 261 0;
+#X connect 259 2 262 0;
+#X connect 259 3 263 0;
+#X connect 259 4 264 0;
+#X connect 259 5 265 0;
+#X connect 259 6 266 0;
+#X connect 259 7 267 0;
